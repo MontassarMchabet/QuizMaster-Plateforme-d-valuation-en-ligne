@@ -1,0 +1,32 @@
+.question-list-container {
+    margin: 20px;
+  }
+  
+  .question-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .option-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .option-list li {
+    margin-bottom: 5px;
+  }
+  
+  .next-button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .next-button:hover {
+    background-color: #45a049;
+  }
+  

@@ -1,0 +1,98 @@
+:root {
+    --primary-color: #6366F1;
+    --secondary-color: #EC4899;
+    --text-color: #FFFFFF;
+    --background-color: #F3F4F6;
+    --input-border-color: #CBD5E0;
+    --button-color: #4F46E5;
+    --button-hover-color: #4338CA;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, var(--primary-color), var(--secondary-color));
+    margin: 0;
+    padding: 0;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 2rem;
+}
+
+.login-form {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-form h2 {
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+}
+
+.error-message {
+    color: red;
+    margin-bottom: 1rem;
+}
+
+.input-item {
+    margin-bottom: 1rem;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #4A5568;
+    font-weight: bold;
+}
+
+.login-form input {
+    padding: 0.5rem;
+    border: 1px solid var(--input-border-color);
+    border-radius: 5px;
+    width: 100%;
+}
+
+button[type="submit"] {
+    margin-top: 1.5rem;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--button-color);
+    color: var(--text-color);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--button-hover-color);
+}
+
+button[type="submit"]:disabled {
+    background-color: #A0AEC0;
+    cursor: not-allowed;
+}
+
+.forgot-password {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.forgot-password a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}

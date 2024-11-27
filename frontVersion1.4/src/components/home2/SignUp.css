@@ -1,0 +1,107 @@
+body, html {
+   
+    
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #6366F1, #EC4899);
+    
+  }
+  
+  .signup-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+  
+    
+  }
+  
+.role-selection{
+    margin-top:150px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 2rem;
+    border-radius: 10px;
+   
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.teacher-form,
+.student-form {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 2rem;
+    border-radius: 10px;
+   
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-card {
+    background: #FFFFFF;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin: 2rem auto;
+}
+  
+  .role-selection h2,
+.teacher-form h2,
+.student-form h2 {
+   
+    color: #6366F1;
+}
+
+.role-selection label,
+.teacher-form label,
+.student-form label {
+    display: block;
+  
+    color: #4A5568;
+    font-weight: bold;
+}
+
+.role-selection input[type="radio"] {
+    margin-right: 0.5rem;
+}
+
+.teacher-form,
+.student-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* .teacher-form label,
+.student-form label {
+    margin-top: 1rem;
+} */
+
+.teacher-form input,
+.student-form input {
+    padding: 0.5rem;
+    border: 1px solid var(--input-border-color);
+    border-radius: 5px;
+}
+
+.next-button,
+button[type="submit"] {
+    margin-top: 1.5rem;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    background-color: var(#4F46E5);
+    color: var(#FFFFFF);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: #F3F4F6 0.3s ease;
+}
+
+.next-button:hover,
+button[type="submit"]:hover {
+    background-color: var(#4338CA);
+}
+
+.next-button:disabled,
+button[type="submit"]:disabled {
+    background-color: #A0AEC0;
+    cursor: not-allowed;
+}

@@ -1,0 +1,13 @@
+const express = require('express');
+const router = express.Router();
+const quizController = require('../controllers/quizController');
+ router.post('/addquizzes', quizController.createQuiz);
+ router.get('/getquizzes', quizController.getAllQuizzes);
+ router.get('/getQuestionsByQuiz/:quizId', quizController.getQuestionsByQuiz);
+ router.put('/updateQuiz/:quizId', quizController.updateQuiz);
+ router.get('/getQuizById/:quizId', quizController.getQuizById);
+router.delete('/deleteQuiz/:quizId', quizController.deleteQuiz);
+router.post('/addQuestion/:quizId', quizController.addQuestion);
+router.put('/updateQuestion/:questionId', quizController.updateQuestion);
+router.delete('/deleteQuestion/:questionId', quizController.deleteQuestion);
+module.exports = router;

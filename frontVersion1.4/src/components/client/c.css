@@ -1,0 +1,61 @@
+/* QuizQuestion.css */
+.quiz-question-card {
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+ 
+}
+
+.quiz-question-card .card-header {
+  background-color: #f8f9fa;
+}
+
+.quiz-question-card .card-title {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.timer {
+  font-weight: bold;
+  color: #dc3545;
+}
+
+.progress {
+  height: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.form-check {
+  margin-bottom: 0.5rem;
+}
+
+.drag-drop-list {
+  list-style-type: none;
+  padding: 0;
+  width: 100px;
+}
+
+.drag-drop-item {
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  cursor: move;
+  width: 200px;
+}
+
+.drag-drop-item:hover {
+  background-color: #e9ecef;
+}
+
+.alert-info ul {
+  margin-bottom: 0;
+  padding-left: 20px;
+}
+
+@media (max-width: 576px) {
+  .quiz-question-card {
+    margin: 0 1rem;
+  }
+}
